@@ -60,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -73,6 +74,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -110,16 +112,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5084397f505f0b418e72b4148e07f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
+  target: {fileID: 0}
   seeDistance: 120
   attackDistance: 122
   Laser3: {fileID: 680086394301103033}
-  lives: 1
+  lives: 2
   PlayAudioDeathG: {fileID: 5549392357779603810}
   scoreBlue: 1
   scoreManager: {fileID: 4271086678803266774, guid: a83096e730ef5be4d92fb13fb28e25a9,
     type: 3}
-  GreenExploisonPrefab: {fileID: 2851351006389674215}
 --- !u!54 &52271114947992188
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -317,16 +319,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4191313356779282}
     m_Modifications:
-    - target: {fileID: 847413694933042245, guid: a8f6de45dffee62468a84b14f9ab6e4b,
-        type: 3}
-      propertyPath: m_Name
-      value: GreenExpl
-      objectReference: {fileID: 0}
-    - target: {fileID: 847413694933042245, guid: a8f6de45dffee62468a84b14f9ab6e4b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 847413694933042242, guid: a8f6de45dffee62468a84b14f9ab6e4b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -382,14 +374,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 847413694933042245, guid: a8f6de45dffee62468a84b14f9ab6e4b,
+        type: 3}
+      propertyPath: m_Name
+      value: GreenExpl
+      objectReference: {fileID: 0}
+    - target: {fileID: 847413694933042245, guid: a8f6de45dffee62468a84b14f9ab6e4b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8f6de45dffee62468a84b14f9ab6e4b, type: 3}
---- !u!1 &2851351006389674215 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 847413694933042245, guid: a8f6de45dffee62468a84b14f9ab6e4b,
-    type: 3}
-  m_PrefabInstance: {fileID: 3193218050686330018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2851351006389674208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 847413694933042242, guid: a8f6de45dffee62468a84b14f9ab6e4b,
