@@ -55,28 +55,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\DestroyBlue.cs" />
-     <Compile Include="Assets\Scripts\DestroyGreen.cs" />
-     <Compile Include="Assets\Scripts\DestroyRed.cs" />
-     <Compile Include="Assets\Scripts\MenuHelper.cs" />
-     <Compile Include="Assets\Scripts\MoveBlueCrip.cs" />
-     <Compile Include="Assets\Scripts\MoveCam.cs" />
-     <Compile Include="Assets\Scripts\MoveGreenCrip.cs" />
-     <Compile Include="Assets\Scripts\MovePlayer.cs" />
-     <Compile Include="Assets\Scripts\MoveRedCrip.cs" />
-     <Compile Include="Assets\Scripts\PanelScr.cs" />
-     <Compile Include="Assets\Scripts\PanelScr1.cs" />
-     <Compile Include="Assets\Scripts\PanelScr2.cs" />
-     <Compile Include="Assets\Scripts\ScoreManager.cs" />
-     <Compile Include="Assets\Scripts\Shoot2.cs" />
-     <Compile Include="Assets\Scripts\ShootingBlue.cs" />
-     <Compile Include="Assets\Scripts\ShootingGreen.cs" />
-     <Compile Include="Assets\Scripts\ShootingHelper.cs" />
-     <Compile Include="Assets\Scripts\ShootingHelper1.cs" />
-     <Compile Include="Assets\Scripts\ShootingRed.cs" />
+     <Compile Include="Assets\Scripts\Managers\MenuHelper.cs" />
+     <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\Shooting\BlueBullet.cs" />
+     <Compile Include="Assets\Scripts\Shooting\BlueShootingMethod.cs" />
+     <Compile Include="Assets\Scripts\Shooting\GreenBullet.cs" />
+     <Compile Include="Assets\Scripts\Shooting\GreenShootingMethod.cs" />
+     <Compile Include="Assets\Scripts\Shooting\RedBullet.cs" />
+     <Compile Include="Assets\Scripts\Shooting\RedShootingMethod.cs" />
      <Compile Include="Assets\Scripts\SpawnBlue.cs" />
      <Compile Include="Assets\Scripts\SpawnGreen.cs" />
      <Compile Include="Assets\Scripts\SpawnerRed.cs" />
+     <Compile Include="Assets\Scripts\UI\BluePanelUI.cs" />
+     <Compile Include="Assets\Scripts\UI\GreenPannelUI.cs" />
+     <Compile Include="Assets\Scripts\UI\RedPanelUI.cs" />
+     <Compile Include="Assets\Scripts\Units\DestroyBlue.cs" />
+     <Compile Include="Assets\Scripts\Units\DestroyGreen.cs" />
+     <Compile Include="Assets\Scripts\Units\DestroyRed.cs" />
+     <Compile Include="Assets\Scripts\Units\MoveingBlueCrip.cs" />
+     <Compile Include="Assets\Scripts\Units\MoveingGreenCrip.cs" />
+     <Compile Include="Assets\Scripts\Units\MoveingRedCrip.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
