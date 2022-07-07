@@ -63,9 +63,7 @@
      <Compile Include="Assets\Scripts\Shooting\GreenShootingMethod.cs" />
      <Compile Include="Assets\Scripts\Shooting\RedBullet.cs" />
      <Compile Include="Assets\Scripts\Shooting\RedShootingMethod.cs" />
-     <Compile Include="Assets\Scripts\SpawnBlue.cs" />
-     <Compile Include="Assets\Scripts\SpawnGreen.cs" />
-     <Compile Include="Assets\Scripts\SpawnerRed.cs" />
+     <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Scripts\UI\BluePanelUI.cs" />
      <Compile Include="Assets\Scripts\UI\GreenPannelUI.cs" />
      <Compile Include="Assets\Scripts\UI\RedPanelUI.cs" />
