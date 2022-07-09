@@ -4765,11 +4765,11 @@ GameObject:
   - component: {fileID: 9073868411449043287}
   - component: {fileID: 9073868411449043286}
   - component: {fileID: 9073868411449043281}
+  - component: {fileID: 6521607931986368252}
   - component: {fileID: 9073868411449043280}
-  - component: {fileID: 4450287326557948445}
   - component: {fileID: 7165453726406375516}
   m_Layer: 0
-  m_Name: Laser3
+  m_Name: GreenBullet
   m_TagString: VirusGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4837,6 +4837,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6521607931986368252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9073868411449043293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf309597febac8c4984371a10fdaf05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  target: {fileID: 0}
 --- !u!135 &9073868411449043280
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4850,19 +4864,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4450287326557948445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9073868411449043293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecdf94b828ea46e4aaff9f44d5102598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!82 &7165453726406375516
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4875,7 +4876,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b01f763b20381ce4193bc9c1b447eff0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0

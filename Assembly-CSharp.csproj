@@ -55,6 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AurynSky\Forest Pack\Scripts\ChestDemo.cs" />
+     <Compile Include="Assets\AurynSky\Forest Pack\Scripts\MaterialMover.cs" />
+     <Compile Include="Assets\AurynSky\Forest Pack\Scripts\Rotator.cs" />
+     <Compile Include="Assets\AurynSky\Forest Pack\Scripts\WheelController.cs" />
      <Compile Include="Assets\Scripts\Managers\MenuHelper.cs" />
      <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Shooting\BlueBullet.cs" />
@@ -66,13 +70,20 @@
      <Compile Include="Assets\Scripts\SpawnManager.cs" />
      <Compile Include="Assets\Scripts\UI\BluePanelUI.cs" />
      <Compile Include="Assets\Scripts\UI\GreenPannelUI.cs" />
+     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\UI\HealthBarBlue.cs" />
+     <Compile Include="Assets\Scripts\UI\HealthBarGreen.cs" />
      <Compile Include="Assets\Scripts\UI\RedPanelUI.cs" />
+     <Compile Include="Assets\Scripts\Units\BlueCastle.cs" />
      <Compile Include="Assets\Scripts\Units\DestroyBlue.cs" />
+     <Compile Include="Assets\Scripts\Units\DestroyEmpty.cs" />
      <Compile Include="Assets\Scripts\Units\DestroyGreen.cs" />
      <Compile Include="Assets\Scripts\Units\DestroyRed.cs" />
+     <Compile Include="Assets\Scripts\Units\GreenCastle.cs" />
      <Compile Include="Assets\Scripts\Units\MoveingBlueCrip.cs" />
      <Compile Include="Assets\Scripts\Units\MoveingGreenCrip.cs" />
      <Compile Include="Assets\Scripts\Units\MoveingRedCrip.cs" />
+     <Compile Include="Assets\Scripts\Units\RedCastle.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -106,11 +117,13 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\_DLNK\_DLNK Source\_DLNK Libraries\[dlnk Script Library]\Basic Scripts\Misc\CameraOrbit.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
+     <None Include="Assets\_DLNK\_DLNK Source\_DLNK Libraries\[dlnk Shader Library]\[Shader Pack]\Deferred\2FacedCutoutDef.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -655,17 +668,38 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>D:/Program Files/UnityInstalls/2019.4.1f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.InputSystem">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -678,6 +712,21 @@
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/UnityLearn1/Bikunov_VU_3_8/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

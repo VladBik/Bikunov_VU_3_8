@@ -47,7 +47,7 @@ public class MoveingRedCrip : MonoBehaviour
     private void Update()
     {
         TargetRedMove();
-
+        Destroy(gameObject, 20f);
         if (lives <= 0)
         {
             DeathRed();

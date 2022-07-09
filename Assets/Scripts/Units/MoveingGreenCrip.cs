@@ -48,7 +48,7 @@ public class MoveingGreenCrip : MonoBehaviour
 
     private void Update()
     {
-
+        Destroy(gameObject, 30f);
         TargetGreenMove();
 
         if (lives <= 0)

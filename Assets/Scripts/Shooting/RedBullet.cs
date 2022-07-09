@@ -18,7 +18,7 @@ public class RedBullet : MonoBehaviour
 
     private void TargetBulletRed()
     {
-        target = GameObject.FindWithTag("VirusRed").transform;
+        target = GameObject.FindGameObjectWithTag("VirusBlue").GetComponent<Transform>();
         transform.LookAt(target.transform);
         transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
     }

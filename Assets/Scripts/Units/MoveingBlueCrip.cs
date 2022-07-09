@@ -48,8 +48,9 @@ public class MoveingBlueCrip : MonoBehaviour
     }
     private void Update()
     {
+        Destroy(gameObject, 20f);
         TargetBlueMove();
-
+        
         if (lives <= 0)
         {
             DeathBlue();
@@ -63,6 +64,7 @@ public class MoveingBlueCrip : MonoBehaviour
     private void TargetBlueMove()
     {
         target = GameObject.FindWithTag("VirusGreen").transform;
+
         if (Vector3.Distance(transform.position, target.transform.position) < seeDistance)
         {
 
@@ -70,6 +72,9 @@ public class MoveingBlueCrip : MonoBehaviour
             transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
 
         }
+
+        
+        
     }
 
     private void DeathBlue()
